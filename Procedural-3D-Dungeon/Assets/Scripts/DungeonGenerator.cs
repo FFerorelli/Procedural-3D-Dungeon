@@ -32,24 +32,7 @@ public class DungeonGenerator : MonoBehaviour
 
     void GenerateDungeon()
     {
-        StartCoroutine(RoomCourutine());
-        //for (int i = 0; i < size.x; i++)
-        //{
-        //    for (int j = 0; j < size.y; j++)
-        //    {
-        //        Cell currentCell = board[Mathf.FloorToInt(i + j * size.x)];
-        //        if (currentCell.visited)
-        //        {
-        //            var newRoom = Instantiate(room, new Vector3(i * offset.x, 0, -j * offset.y), Quaternion.identity, transform).GetComponent<RoomBehaviour>();
-        //            newRoom.UpdateRoom((currentCell.status));
-
-        //            newRoom.name += " " + i + "-" + j;
-        //        }
-        //    }
-        //}
-    }
-    IEnumerator RoomCourutine()
-    {
+      //  StartCoroutine(RoomCourutine());
         for (int i = 0; i < size.x; i++)
         {
             for (int j = 0; j < size.y; j++)
@@ -62,12 +45,29 @@ public class DungeonGenerator : MonoBehaviour
 
                     newRoom.name += " " + i + "-" + j;
                 }
-
-               yield return new WaitForSeconds(0.1f);
             }
         }
-       
     }
+    //IEnumerator RoomCourutine()
+    //{
+    //    for (int i = 0; i < size.x; i++)
+    //    {
+    //        for (int j = 0; j < size.y; j++)
+    //        {
+    //            Cell currentCell = board[Mathf.FloorToInt(i + j * size.x)];
+    //            if (currentCell.visited)
+    //            {
+    //                var newRoom = Instantiate(room, new Vector3(i * offset.x, 0, -j * offset.y), Quaternion.identity, transform).GetComponent<RoomBehaviour>();
+    //                newRoom.UpdateRoom((currentCell.status));
+
+    //                newRoom.name += " " + i + "-" + j;
+    //            }
+
+    //           yield return new WaitForSeconds(0.1f);
+    //        }
+    //    }
+       
+    //}
 
     void MazeGenerator()
     {
