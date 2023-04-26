@@ -387,8 +387,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   size: {x: 5, y: 7}
   startPos: 0
-  room: {fileID: 2383908125849743827, guid: 03964a99fc9cca14997a76d4074c9077, type: 3}
-  offset: {x: 8, y: 8}
+  room: {fileID: 2383908125849743827, guid: d220744cc8ab69044ad93758bcae16d7, type: 3}
+  offset: {x: 6, y: 6}
 --- !u!4 &586809904
 Transform:
   m_ObjectHideFlags: 0
