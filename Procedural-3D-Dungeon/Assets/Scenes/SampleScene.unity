@@ -387,7 +387,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   size: {x: 5, y: 7}
   startPos: 0
-  room: {fileID: 2383908125849743827, guid: 03964a99fc9cca14997a76d4074c9077, type: 3}
+  rooms:
+  - {fileID: 2383908125849743827, guid: 5fdc7393470256b4d8ab9f6a6f0bdc1a, type: 3}
+  - {fileID: 2383908125849743827, guid: 16d4cab1d29b94143918a84c27e9564e, type: 3}
+  - {fileID: 2383908125849743827, guid: 06e348bdf27f9c74ebe30d310d9050eb, type: 3}
   offset: {x: 8, y: 8}
 --- !u!4 &586809904
 Transform:
